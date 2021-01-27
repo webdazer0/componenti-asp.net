@@ -1,0 +1,4 @@
+Ciao sono riga 1
+riga 2
+Stringa su più 
+                        righe

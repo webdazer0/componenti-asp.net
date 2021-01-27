@@ -1,0 +1,111 @@
+﻿		<h2>Selezione</h2>
+			
+			
+			SELECT * FROM allievi;
+						
+			SELECT nome,cognome FROM allievi;
+						
+			SELECT nome as ciao,cognome as pluto FROM allievi;
+			
+			<h2>Clausole Where semplici</h2>
+			
+			SELECT * FROM allievi 
+						  WHERE idallievo='1';
+			
+			SELECT * FROM allievi 
+						  WHERE idallievo <> '1';
+						  			  
+			SELECT * FROM allievi 
+						  WHERE idallievo > '2';
+
+			SELECT * FROM allievi 
+						  WHERE idallievo >= '2';
+			
+			SELECT * FROM allievi 
+						  WHERE idallievo < '2';
+			
+			SELECT * FROM allievi 
+						  WHERE note IS null;
+
+			SELECT * FROM allievi 
+						  WHERE NOT note IS null;
+			
+			SELECT * FROM allievi 
+						  WHERE idallievo <= '2';
+
+			SELECT * FROM allievi 
+						  WHERE nome LIKE  '%ario';
+			
+			SELECT * FROM allievi 
+						  WHERE nome LIKE  'Maria%';
+						  			  
+			SELECT * FROM allievi 
+						  WHERE nome LIKE  '%Mari%';
+
+			SELECT * FROM allievi 
+						  WHERE nome LIKE  '%Mari_';
+			
+			SELECT * FROM allievi 
+						  WHERE nome LIKE  'Mario_';
+				
+			<h2>Clausole Where Composte</h2>
+			
+			SELECT * FROM allievi 
+						 	WHERE nome LIKE  '%Mari%'
+						 		  AND
+						 		  cognome =  'Rossi';
+			
+			SELECT * FROM allievi 
+						 	WHERE nome LIKE  '%Mari%'
+						 		  OR
+						 		  cognome =  'Rossi';
+			
+			SELECT * FROM allievi WHERE nome LIKE '%Mari%' OR ( cognome = 'Rossi' AND nome='Gian Dario' )
+			
+			SELECT nome, cognome, note FROM allievi 
+					WHERE    nome LIKE '%Mari%' OR 
+							( 
+								cognome = 'Rossi' 
+								AND 
+								nome='Gian Dario' 
+					
+							 )
+							 OR note IS NULL
+
+
+			SELECT * FROM allievi 
+						 	WHERE idallievo 
+						 			BETWEEN '1' AND '3' ;
+			
+			SELECT * FROM allievi 
+						  WHERE datanascita 
+						 			BETWEEN '1985-01-01' AND '1986-12-31'; 
+			
+			
+			
+			SELECT * FROM allievi 
+						 	WHERE 
+						 		  (
+						 		  nome LIKE  '%Mari%'
+						 		  OR
+						 		  cognome =  'Rossi'
+						 		  )
+						 		  AND
+						 		  datanascita
+						 		  BETWEEN '1985-01-01' AND '1986-12-31'; 
+			 
+			 
+			 
+			<h2>Ordinamento</h2>
+				SELECT * FROM allievi 
+						  WHERE idallievo > '1'
+							
+						  	ORDER BY datanascita ASC;
+						  	
+				SELECT * FROM allievi 	  	
+						  WHERE idallievo > '1' 
+						  	ORDER by datanascita DESC;
+				
+				SELECT * FROM allievi 	  	
+						  WHERE idallievo > '1' 
+						  	ORDER by nome ASC, cognome DESC;

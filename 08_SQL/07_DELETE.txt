@@ -1,0 +1,6 @@
+﻿
+
+DELETE FROM allievi
+	WHERE IdAllievo='1';
+	
+	  

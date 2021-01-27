@@ -1,0 +1,375 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12509C7B-BD19-4402-A647-9A1C3EA111CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_02_componenti</RootNamespace>
+    <AssemblyName>02_componenti</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="00_label.aspx" />
+    <Content Include="01_bottoni.aspx" />
+    <Content Include="03_Controlli.aspx" />
+    <Content Include="04_FieldValidator.aspx" />
+    <Content Include="04_FieldValidatorCustom.aspx" />
+    <Content Include="03_Esercizio.txt" />
+    <Content Include="05_Esercizio.aspx" />
+    <Content Include="06_GridView.aspx" />
+    <Content Include="07_Esercizio.txt" />
+    <Content Include="07_Login.aspx" />
+    <Content Include="08_AccessoDB.aspx" />
+    <Content Include="08_SQL\00_Esercizio.txt" />
+    <Content Include="08_SQL\01_INSERT.txt" />
+    <Content Include="08_SQL\02_ESERCIZIO.txt" />
+    <Content Include="08_SQL\03_SELECT.txt" />
+    <Content Include="08_SQL\04_ESERCIZIO.txt" />
+    <Content Include="08_SQL\05_UPDATE.txt" />
+    <Content Include="08_SQL\06_ESERCIZIO.txt" />
+    <Content Include="08_SQL\07_DELETE.txt" />
+    <Content Include="08_SQL\08_ESERCIZIO.txt" />
+    <Content Include="08_SQL\Gestione\ALTER_DROP.sql" />
+    <Content Include="08_SQL\Gestione\ALTER_ADD.sql" />
+    <Content Include="08_SQL\Gestione\BACKUP.txt" />
+    <Content Include="08_SQL\Gestione\dbo.allievi.sql" />
+    <Content Include="08_SQL\Gestione\dbo.nominativi.sql" />
+    <Content Include="08_SQL\Gestione\dbo.presenze.sql" />
+    <Content Include="08_SQL\Gestione\dbo.voti.sql" />
+    <Content Include="08_SQL\Gestione\RESTORE.txt" />
+    <Content Include="09_AccessoDati\01_DataReader.aspx" />
+    <Content Include="09_AccessoDati\02_ExecuteNonQuery.aspx" />
+    <Content Include="09_DbSelect.aspx" />
+    <Content Include="10_FileUpload.aspx" />
+    <Content Include="11_ManipolazioneFile.aspx" />
+    <Content Include="12_Directory.aspx" />
+    <Content Include="13_Bulletlist.aspx" />
+    <Content Include="13_Esercizio.aspx" />
+    <Content Include="13_esercizio.txt" />
+    <Content Include="14_DropDownList.aspx" />
+    <Content Include="15_GridView_Custom.aspx" />
+    <Content Include="16_Date.aspx" />
+    <Content Include="17_sendmail.aspx" />
+    <Content Include="17 - smtp.png" />
+    <Content Include="18_Download.aspx" />
+    <Content Include="App_Data\Contatti.mdf" />
+    <Content Include="App_Data\Contatti_log.ldf">
+      <DependentUpon>Contatti.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Pippo.mdf" />
+    <Content Include="App_Data\Pippo_log.ldf">
+      <DependentUpon>Pippo.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="destinazione.aspx" />
+    <Content Include="02_HyperLink.aspx" />
+    <Content Include="05_Esercizio.txt" />
+    <Content Include="protette\destinazione_protetta.aspx" />
+    <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Upload\1.txt" />
+    <Content Include="Upload\img.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00_label.aspx.cs">
+      <DependentUpon>00_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="00_label.aspx.designer.cs">
+      <DependentUpon>00_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="01_bottoni.aspx.cs">
+      <DependentUpon>01_bottoni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="01_bottoni.aspx.designer.cs">
+      <DependentUpon>01_bottoni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Controlli.aspx.cs">
+      <DependentUpon>03_Controlli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Controlli.aspx.designer.cs">
+      <DependentUpon>03_Controlli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_FieldValidator.aspx.cs">
+      <DependentUpon>04_FieldValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_FieldValidator.aspx.designer.cs">
+      <DependentUpon>04_FieldValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_FieldValidatorCustom.aspx.cs">
+      <DependentUpon>04_FieldValidatorCustom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_FieldValidatorCustom.aspx.designer.cs">
+      <DependentUpon>04_FieldValidatorCustom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_Esercizio.aspx.cs">
+      <DependentUpon>05_Esercizio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_Esercizio.aspx.designer.cs">
+      <DependentUpon>05_Esercizio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_GridView.aspx.cs">
+      <DependentUpon>06_GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_GridView.aspx.designer.cs">
+      <DependentUpon>06_GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="07_Login.aspx.cs">
+      <DependentUpon>07_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="07_Login.aspx.designer.cs">
+      <DependentUpon>07_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="08_AccessoDB.aspx.cs">
+      <DependentUpon>08_AccessoDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="08_AccessoDB.aspx.designer.cs">
+      <DependentUpon>08_AccessoDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_AccessoDati\01_DataReader.aspx.cs">
+      <DependentUpon>01_DataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_AccessoDati\01_DataReader.aspx.designer.cs">
+      <DependentUpon>01_DataReader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_AccessoDati\02_ExecuteNonQuery.aspx.cs">
+      <DependentUpon>02_ExecuteNonQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_AccessoDati\02_ExecuteNonQuery.aspx.designer.cs">
+      <DependentUpon>02_ExecuteNonQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="09_DbSelect.aspx.cs">
+      <DependentUpon>09_DbSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="09_DbSelect.aspx.designer.cs">
+      <DependentUpon>09_DbSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10_FileUpload.aspx.cs">
+      <DependentUpon>10_FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10_FileUpload.aspx.designer.cs">
+      <DependentUpon>10_FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="11_ManipolazioneFile.aspx.cs">
+      <DependentUpon>11_ManipolazioneFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="11_ManipolazioneFile.aspx.designer.cs">
+      <DependentUpon>11_ManipolazioneFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="12_Directory.aspx.cs">
+      <DependentUpon>12_Directory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="12_Directory.aspx.designer.cs">
+      <DependentUpon>12_Directory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Bulletlist.aspx.cs">
+      <DependentUpon>13_Bulletlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Bulletlist.aspx.designer.cs">
+      <DependentUpon>13_Bulletlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="13_Esercizio.aspx.cs">
+      <DependentUpon>13_Esercizio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="13_Esercizio.aspx.designer.cs">
+      <DependentUpon>13_Esercizio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="14_DropDownList.aspx.cs">
+      <DependentUpon>14_DropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="14_DropDownList.aspx.designer.cs">
+      <DependentUpon>14_DropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="15_GridView_Custom.aspx.cs">
+      <DependentUpon>15_GridView_Custom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15_GridView_Custom.aspx.designer.cs">
+      <DependentUpon>15_GridView_Custom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="16_Date.aspx.cs">
+      <DependentUpon>16_Date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="16_Date.aspx.designer.cs">
+      <DependentUpon>16_Date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="17_sendmail.aspx.cs">
+      <DependentUpon>17_sendmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="17_sendmail.aspx.designer.cs">
+      <DependentUpon>17_sendmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="18_Download.aspx.cs">
+      <DependentUpon>18_Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="18_Download.aspx.designer.cs">
+      <DependentUpon>18_Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="destinazione.aspx.cs">
+      <DependentUpon>destinazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="destinazione.aspx.designer.cs">
+      <DependentUpon>destinazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="02_HyperLink.aspx.cs">
+      <DependentUpon>02_HyperLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_HyperLink.aspx.designer.cs">
+      <DependentUpon>02_HyperLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="protette\destinazione_protetta.aspx.cs">
+      <DependentUpon>destinazione_protetta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="protette\destinazione_protetta.aspx.designer.cs">
+      <DependentUpon>destinazione_protetta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50197</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

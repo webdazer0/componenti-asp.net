@@ -1,0 +1,71 @@
+﻿1) Basandoti sui dati inseriti nell'esercizio precedente
+   crea delle query di selezione seguendo i criteri descritti:
+	
+	a) Visualizza solo il nome ed il prezzo di tutti i prodotti
+	   	
+		SELECT Nome, Prezzo FROM Prodotti
+
+
+	b) Visualizza solo il nome ed il prezzo di tutti i prodotti in cui il prezzo è compreso tra 
+		15 e 20 euro
+
+		SELECT Nome, Prezzo FROM Prodotti
+			WHERE Prezzo BETWEEN 15 AND 50
+
+		SELECT Nome,Prezzo FROM Prodotti
+			WHERE Prezzo >= 15 AND Prezzo <= 50
+
+
+	c) Visualizza tutte le colonne dei prodotti che non sono attivi
+		
+		SELECT * FROM Prodotti
+			WHERE Attivo='N'
+
+	d) Visualizza i nomi dei prodotti che non hanno descrizione
+
+		SELECT Nome FROM Prodotti WHERE (Descrizione IS NULL OR  Descrizione = '')
+
+	e) Visualizza tutte le colonne delle righe che non sono attive e non hanno descrizione html
+
+		SELECT * FROM Prodotti
+				WHERE 
+				Attivo='N' 
+				AND (Descrizione_HTML IS NULL OR DATALENGTH(Descrizione_HTML) = '' )
+
+	f) Visualizza tutti i prodotti il cui nome inizia per lampada
+			
+		SELECT * FROM Prodotti
+			WHERE 
+				Nome LIKE 'lampada%'
+
+
+	g) Visualizza tutti i prodotti il cui nome contiene la parola "da"
+		
+		SELECT * FROM Prodotti
+			WHERE 
+				Nome LIKE '%da%'
+
+
+	h) Visualizza tutti i prodotti che hanno codice uguale a "B200" oppure "B99" e sono attivi
+		
+		SELECT * FROM Prodotti
+			WHERE 
+				(Id = 'B200' OR Id='B99') AND Attivo='N'
+		
+
+	i) Visualizza tutti i prodotti in cui la descrizione html contiene la parola "green"
+
+		SELECT * FROM Prodotti
+				WHERE 
+					Descrizione_HTML LIKE '%green%'
+		
+
+	l) visualizza tutti i prodotti che hanno prezzo inferiore o uguale a 76.9
+		
+		SELECT * FROM Prodotti
+				WHERE Prezzo <= '76.9'
+
+	m) visualizza tutti i prodotti che non hanno immagine
+		
+		SEELCT * FROM Prodotti
+			WHERE (Img IS NULL OR Img='')

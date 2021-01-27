@@ -1,0 +1,58 @@
+﻿1) Basandoti sui dati inseriti negli esercizi precedenti
+   crea delle query di modifica cambino il nome del prodotto seguento i criteri descritti:
+	
+	a) Elimina tutti i prodotti (Ripristina DB)
+		DELETE FROM Prodotti;
+
+	b) Elimina i prodotti in cui il prezzo è compreso tra  15 e 20 euro (Ripristina DB)
+
+		DELETE FROM Prodotti
+			WHERE Prezzo BETWEEN 15 AND 20			
+
+	c) Elimina i prodotti che non sono attivi (Ripristina DB) 
+
+		DELETE FROM Prodotti
+			WHERE Prezzo Attivo='N' 
+
+	d) Elimina i prodotti che non hanno descrizione (Ripristina DB)
+
+		DELETE FROM Prodotti
+			WHERE Descrizione='' OR Descrizione IS NULL
+
+	e) Elimina i prodotti che non hanno descrizione html (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE DATALENGTH(Descrizione_HTML)='' OR Descrizione_HTML IS NULL
+
+	f) Elimina i prodotti  il cui nome inizia per lampada (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE Nome LIKE 'lampada%'
+
+	g) Elimina i prodotti  il cui nome contiene la parola "da" (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE Nome LIKE '%da%'
+
+	h) Elimina i prodotti che hanno codice uguale a "B200" oppure "B99" e sono attivi (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE (Id='B200' OR Id='B99')
+
+	i) Elimina i prodotti che in cui descrizione html contiene la parola "green" (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE Descrizione_HTML LIKE '%green%'
+			
+
+	l) Elimina i prodotti che hanno prezzo inferiore o uguale a 76.9 (Ripristina DB)
+		
+		DELETE FROM Prodotti
+			WHERE Prezzo <= 76.9
+
+	m) Elimina i prodotti che prodotti che non hanno immagine (Ripristina DB)
+
+		DELETE FROM Prodotti
+			WHERE Img='' OR Img IS NULL
+
+	** Per ripristinare il DB bisognerà eseguire le query di INSERT dell'esercizio 1

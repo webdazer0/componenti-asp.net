@@ -1,0 +1,10 @@
+﻿
+Prova a costruire una pagina che abbia un campo Upload,
+i file inseriti dall'utente verranno salvati nella cartella Upload/13_Esercizio
+che dovrà essere creata da programma.
+
+Ad ogni Page_Load si dovranno leggere tutti i file
+presenti nella cartella Upload/13_Esercizio
+i file letti dovranno essere visualizzati all'interno di una BulletList
+
+

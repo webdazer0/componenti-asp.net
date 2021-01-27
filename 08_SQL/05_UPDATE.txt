@@ -1,0 +1,7 @@
+﻿UPDATE allievi
+		SET 
+			nome = 'Nuovo valore'
+			,cognome = 'Nuovo valore'
+
+		WHERE
+			idallievo = '1'

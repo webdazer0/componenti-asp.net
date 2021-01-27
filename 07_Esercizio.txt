@@ -1,0 +1,4 @@
+﻿
+Prova a creare una nuova soluzione con una cartella protetta
+denominata admin, crea un sistema di Login in modo che i file all'interno
+della cartella admin siano accessibili solamente dopo essersi autenticati

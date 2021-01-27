@@ -1,0 +1,8 @@
+﻿1) Scrivere e provare delle query di inserimento per la tabella appena creata
+   Le query di inserimento dovranno inserire i prodotti definiti nel file prodotti.xlsx.
+   Se necessario, scrivi un comando per modificare la tabella in modo che possa 
+   contenere i dati indicati
+
+   *NB:
+   Salvate le query di insert in un file di testo, serviranno engli esercizi successivi
+

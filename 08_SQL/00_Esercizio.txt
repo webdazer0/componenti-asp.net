@@ -1,0 +1,10 @@
+﻿Creare una tabella di nome
+Prodotti con i seguenti campi 
+    Utilizzare i campi di tipo e dimensioni congruenti al contenuto
+    Id                      (Chiave primaria Auto incrementale)
+    Nome                    Nome del prodotto
+    Prezzo                  Contiene il prezzo del prodotto
+    Descrizione             Breve descrittivo
+    Descrizione_HTML        Questo campo conterrà del testo HTML per la scheda di dettaglio del prodotto  
+    Img                     Nome del file dell'immagine princiapale
+    Attivo                  Deteremina sel il prodotto è attivo o no

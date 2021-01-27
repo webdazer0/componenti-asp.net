@@ -1,0 +1,25 @@
+﻿
+
+
+Prova a creare un progetto Web Form vuoto ed aggiungere una pagina
+La pagina dovrà contenere i seguenti campi:
+	,Nome
+	,Cognome
+	,Età 
+	,6 CheckBox materie preferite (PHP, .NET, JS, CSS, Java, Python)
+	,2 Radio (Maschio, Femmina)
+	,Email 
+	
+	Bottone di salvataggio
+
+	Aggiungere i RequiredFieldValidator
+	Nome, Cognome (Obbligatori)
+	Età (Range da 16 a 99)
+	Checkbox 3 almeno 3 selezionati obbligatori
+	Email (Verifica e-mail)
+	Radio selezione obbligatoria
+
+
+	Il contenuto dei campi verrà mostrato
+	all'interno di alcune label di riepilogo solamente se la validazione risulta corretta
+

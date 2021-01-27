@@ -1,0 +1,11 @@
+﻿
+
+Prova a creare un progetto Web Form vuoto ed aggiungere una pagina
+La pagina dovrà contenere i campi testuali
+	Nome, Cognome, Azienda, Email 
+
+	Aggiungi un bottone di invio
+
+	Il contenuto dei campi verrà mostrato
+	all'interno di alcune label di riepilogo
+

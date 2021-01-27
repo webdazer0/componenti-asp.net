@@ -1,0 +1,16 @@
+﻿INSERT INTO allievi
+				(
+					
+					nome,
+					cognome,
+					datanascita,
+					note
+				)
+				VALUES
+				(
+					
+					'nome',
+					'cognome',
+					'1979-12-31 00:00:00',
+					NULL
+				);

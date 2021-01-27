@@ -1,0 +1,67 @@
+﻿1) Basandoti sui dati inseriti negli esercizi precedenti
+   crea delle query di modifica che cambino il prodotto seguendo i criteri descritti:
+	
+	a) Modifica solo il nome ed il prezzo di tutti i prodotti
+		UPDATE Prodotti
+			SET
+			Nome='nuovo nome'
+
+	b) Modifica solo il nome ed il prezzo di tutti i prodotti in cui il prezzo è compreso tra 
+		15 e 20 euro
+
+		UPDATE Prodotti 
+			SET 
+				Nome='nuovo nome', Prezzo='10' 
+			WHERE Prezzo BETWEEN 15 AND 20
+
+	c) Modifica tutte le colonne (escluso la chiave primaria) dei prodotti che non sono attivi
+		
+		UPDATE Prodotti
+			SET Nome='nuovo nome',Prezzo='22.3',Descrizione='nuova desc', Descrizione_HTML=NULL
+			    Img='pippo.jpg', Attivo='S' WHERE Attivo='N'
+
+	d) Modifica i nomi dei prodotti che non hanno descrizione
+
+		UPDATE Prodotto
+			SET Nome='nuovo nome' 
+			WHERE Descrizione = '' OR Descrizione IS NULL
+
+	e) Modifica tutte le colonne che non sono attive e non hanno descrizione html
+		UPDATE Prodotti
+			SET Nome='',Prezzo='0',Descrizione=NULL, Descrizione_HTML=NULL
+			    Img=NULL, Attivo='N'
+				WHERE Attivo='N' AND (DATALENGTH(Descrizione_HTML)='' OR Descrizione_HTML IS NULL)
+
+	f) Modifica tutti i prodotti il cui nome inizia per lampada
+		
+		UPDATE Prodotti
+			SET Nome='lampada2'
+			WHERE Nome LIKE 'lampada%'
+
+	g) Modifica tutti i prodotti il cui nome contiene la parola "da"
+			
+		UPDATE Prodotti
+			SET Nome='lampada3'
+			WHERE Nome LIKE '%da%'
+
+	h) Modifica tutti i prodotti che hanno codice uguale a "B200" oppure "B99" e sono attivi
+		UPDATE Prodotti
+			SET Nome='nuovo nome'
+			WHERE (Id = 'B200' OR Id='B99') AND Attivo='N'
+
+	i) Modifica tutti i prodotti in cui la descrizione html contiene la parola "green"
+
+		UPDATE Prodotti
+			SET Nome='lampada green'
+				WHERE Descrizione_HTML LIKE '%green%'
+
+	l) Modifica tutti i prodotti che hanno prezzo inferiore o uguale a 76.9
+		
+		UPDATE Prodotti
+			SET Nome='lampada low cost'
+				WHERE Prezzo <= 76.9
+
+	m) Modifica tutti i prodotti che non hanno immagine
+		UPDATE Prodotti
+			SET Nome='no img'
+				WHERE (Img IS NULL OR Img='')
